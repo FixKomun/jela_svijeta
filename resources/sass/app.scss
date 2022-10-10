@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    .main-title {
+        margin: 1rem 0 0 1rem;
+        font-family: "Asap", sans-serif;
+        font-size: 50px;
+        color: #702963;
+    }
+    .meal-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        .meal-card {
+            margin: 1rem 1rem 1rem 1rem;
+            border: 1px solid;
+            border-radius: 8px;
+            .meal-id {
+                font-size: 30px;
+                padding: 5px;
+            }
+            .meal-info {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2px;
+                margin-left: 2rem;
+                .title,
+                .desc {
+                    font-size: 20px;
+
+                    span {
+                        font-size: 24px;
+                        color: #702963;
+                    }
+                }
+                .desc-null {
+                    font-size: 20px;
+
+                    span {
+                        font-size: 24px;
+                        color: #702963;
+                    }
+                    color: orangered;
+                }
+            }
+        }
+    }
+}
