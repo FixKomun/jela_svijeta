@@ -29,7 +29,8 @@ class MealRequest extends FormRequest
             'page' => 'sometimes|integer',
             'category' => 'sometimes',
             'tags' => 'sometimes|string',
-            'with' => 'sometimes|string'
+            'with' => 'sometimes|string',
+            'diff_time' => 'sometimes'
 
         ];
     }
