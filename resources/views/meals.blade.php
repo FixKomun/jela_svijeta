@@ -14,12 +14,12 @@
         <div>
             <h1 class="main-title">Jela Svijeta</h1>
         </div>
-      
+       
         <div class="meal-container">
         @foreach ($meals as $meal)   
-     
             <div class="meal-card">
                 <h1 class="meal-id">Meal #{{ $meal->id}}</h1>    
+                <hr/>
                 <div class="meal-info">    
                   
                     <h2 class="title"><span>Title: </span>{{ $meal->title}}</h2>
@@ -56,9 +56,12 @@
     
         </div>
          <!--PAGE NUMBER REQUEST --BOOTSTRAP PAGINATIOR-->
-         @if(request('per_page'))
-         {{ $meals->links() }}
-         @endif
+         <div class="pagination">
+            @if(request('per_page'))
+            {{ $meals->links() }}
+            @endif
+         </div>
+    
      
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     </body>

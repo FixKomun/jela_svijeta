@@ -26,7 +26,11 @@ class MealRequest extends FormRequest
         return [
             'lang' => 'required|alpha|',
             'per_page' => 'sometimes|integer',
-            'page' => 'sometimes|integer'
+            'page' => 'sometimes|integer',
+            'category' => 'sometimes',
+            'tags' => 'sometimes|string',
+            'with' => 'sometimes|string'
+
         ];
     }
 
